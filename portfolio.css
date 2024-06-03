@@ -1,0 +1,1131 @@
+body{
+ background-color: plum;
+
+}
+#home{
+    
+}
+#fxnav{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    margin-top: auto;
+    
+    
+}
+.navbar{
+    text-align: center;
+    padding: 0.5px;
+    background-color:rgb(245, 239, 239);
+    border-radius: 10px;
+    height: 70px;
+    width: 100%;
+    margin: 10px;
+    box-shadow: 3px 3px 3px black;
+    
+
+    
+
+
+}
+  
+   .nav-links a {
+    color: purple;
+    text-decoration: none;
+    margin: 15px;
+    text-decoration: none;
+   }
+   .nav-links a:hover {
+    color: palevioletred;
+   }
+   
+
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   
+   .menu li {
+    padding: 5px 14px;
+   }
+   
+   /* DROPDOWN MENU */
+   .home {
+    position: relative; 
+   }
+   .dropdown {
+    background-color:plum;
+    border: 1px solid purple;
+    padding: 1em;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   /*.dropdown li + li {
+    margin-top: 10px;
+   }*/
+   .home:hover .dropdown {
+    display: block;
+    transition: 0.5s;
+   }
+   
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+   /* CHECKBOX HACK */
+   input[type=checkbox]{
+    display: none;
+   } 
+
+   
+   
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 200px) {
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:pink;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+    }
+   .menu li:hover {
+    display: inline-block;
+    background-color:pink;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: auto;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: pink;
+   }
+   
+   }
+   .p{
+    padding: 10px;
+    border-radius: 0%;
+    background-color: plum;
+    top: 30px;
+    
+}
+
+
+   
+   .welcome{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid purple;
+    color: purple;
+    margin-top: 6.3%;
+    
+    
+   }
+.dropdown li a{
+    text-decoration: none;
+}
+.dropdown-button{ 
+    border: 0px;
+    color: purple;
+    background-color:  plum;
+    padding: 5px;
+    border: 1px solid purple;
+    margin-top: -10px;
+}
+
+.number{
+    padding: 10px;
+    background-color: plum;
+    border: 2px solid purple;
+    border-radius: 30px;
+    width: 10%;   
+    margin-left: 0%;
+    margin-top: 0px;
+}
+
+.pr{
+    padding: 10px;
+    width: 50%;
+    border-radius: 100px;
+    
+    
+}
+.aboutme{
+    padding: 50px;
+    
+}
+#about{
+    background-color: rgb(253, 249, 249);
+    margin: 100px;   
+    padding-left: 30px;
+    border-radius: 30px ;
+}
+
+.myproject{
+    padding: 50px;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(30px, 1fr));
+    gap: 20px;
+}
+
+.contact{
+    padding: 50px;
+    background-color: white;
+    margin: 0%;
+    overflow: auto  ;
+    margin-top: -40px;
+}
+
+.contactform{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contactme{
+    border-radius: 10px;
+    border: 1px solid purple;
+    margin-top: 10px;
+}
+
+input, textarea,button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+button{
+    background-color: plum;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#contactme{
+    font-size: 20px;
+    color: purple;
+}
+.call{
+    border:1px solid purple;
+    border-radius: 10px;
+    color:white;
+    background-color: plum;
+    width:15px;
+    height: 15px;
+
+    padding: 10px;
+    margin-left: 70%;
+    margin-top: 0px;
+}
+.callicon{
+    margin-left: 0px;
+}
+
+.f1mage{
+    background-image: url(images/1istbackground.jpg);
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    
+}
+#curvedimg{
+    border-radius: 50px;
+}
+.Project-grid{
+    border-color: white;
+    border-radius: 50px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 13px13px 20px skyblue,-13px 20px skyblue;
+}
+.mypic{
+    border-radius: 100%;
+}
+.AM{
+    font-size: 40px;
+    color: purple;
+}
+#alsocontactme{
+    display: flex;
+}
+#alsocontactme2{
+    margin-left: 20%;
+}
+.alignimgandtext{
+    display: flex;
+}
+#name{
+    font-size: 40px;
+    margin-left: 5%;
+    margin-top: 100px;
+    color: purple;
+}
+.login{
+    background-color: rgb(252, 248, 248);
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    margin-top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px;
+    box-shadow: 13px 13px 20px skyblue,-13px -13px 20px skyblue;
+    margin-left: 50px;
+}
+
+#submitbtn{
+    background-color: skyblue;
+    text-decoration: none;
+}
+
+#mainskills{
+    display: flex;
+    font-size: 70px;
+    margin-bottom: 50px;
+   
+}
+#html{
+    margin: 20px;
+    margin-left: 30px;
+    color: peachpuff;
+}
+#css{
+    color: rgb(141, 141, 240);
+    margin: 20px;
+    margin-left: 200px;
+}
+
+#Javascript{
+    color: rgb(236, 236, 121);
+    margin: 20px;
+    margin-left: 200px;
+}
+.hvskills{
+    border-radius: 20px;
+    background-color: rgb(251, 252, 253);
+    padding: 40px;
+    box-shadow: 3px 3px 3px black;
+}
+.hvskills#html:hover{
+    color: orange;
+    transform: translateY(-8px);
+}
+.hvskills#css:hover{
+    color: blue;
+    transform: translateY(-8px);
+}
+.hvskills#Javascript:hover{
+    color: yellow;
+    transform: translateY(-8px);
+}
+.moreprojectsalign{
+    display: flex;
+}
+.moreprojects{
+    background-color: white;
+    color: #fff;
+    font-size: 83px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    margin-top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px;
+    padding-top: 40px;
+    box-shadow: 13px 13px 20px rgb(51, 52, 53);
+    margin-left: 20%;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    padding-top: 25px;
+    animation: myScale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    font-weight: 200;
+}
+
+@keyframes myScale{
+    50%{ transform: scale(0.7, 0.7);}
+}
+/*
+@media screen and (max-width:1025px) and (min-width:400px) {
+    .contact{
+        padding: 50px;
+        background-color: white;
+        margin: 0%;
+        overflow: auto  ;
+        margin-top: -40px;
+        width: 100rem;
+        height: 700px;
+    }
+    
+
+    .contactme{
+        border-radius: 10px;
+        border: 1px solid purple;
+        margin-top: 10px;
+        height: 150px;
+        width: 50rem;
+    }
+    
+    input, textarea,button{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        height: 100px;
+        border: 1px solid #ccc;
+    
+    }
+    button{
+        background-color: rgb(160, 220, 221);
+        color: #fff;
+        cursor: pointer;
+        height: 120px;
+        font-size: 100px;
+        border-radius: 10px;
+    }
+    #contactme{
+        font-size: 60px;
+        color: purple;
+    }
+    #mainskills{
+        display: flex;
+        font-size: 70px;
+        margin-bottom: 50px;
+        
+        width: 100rem;
+        padding: 50px;
+       
+    }
+    #html{
+        margin: 20px;
+        margin-left: 30px;
+        color: peachpuff;
+    }
+    #css{
+        color: rgb(141, 141, 240);
+        margin: 20px;
+        margin-left: 20rem;
+    }
+    
+    #Javascript{
+        color: rgb(236, 236, 121);
+        margin: 20px;
+        margin-left: 20rem;
+    }
+    .hvskills{
+        border-radius: 20px;
+        background-color: rgb(251, 252, 253);
+        padding: 40px;
+        box-shadow: 3px 3px 3px black;
+    }
+    .hvskills#html:hover{
+        color: orange;
+        transform: translateY(-8px);
+    }
+    .hvskills#css:hover{
+        color: blue;
+        transform: translateY(-8px);
+    }
+    .hvskills#Javascript:hover{
+        color: yellow;
+        transform: translateY(-8px);
+    }
+    .mskl{
+        font-size: 50px;
+        width: 100rem;
+    }
+    .AM{
+        font-size: 40px;
+        color: purple;
+        width: 100rem;
+
+    }
+    .moreprojectsalign{
+        display: flex;
+        width: 100rem;
+        padding: 50px;
+    }
+    .moreprojects{
+        background-color: rgb(231, 212, 212);
+        color: purple;
+        font-size: 83px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        position: relative;
+        text-align: center;
+        margin-top: 20%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 200px;
+        padding: 20px;
+        padding-top: 40px;
+        box-shadow: 13px 13px 20px rgb(51, 52, 53);
+        margin-left: 20%;
+    }
+    .aboutme{
+       font-size: 33px;
+    }
+    #About{
+        background-color: rgb(251, 245, 245);
+        width: 100rem;
+        margin: 10px;       
+        border-radius: 30px ;
+        height: 105rem;
+    }
+    #name{
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        margin-top: 100px;
+        color: purple;
+    }
+    .welcome{
+        width: 30rem;
+        padding: 50px;
+        text-align: center;
+        background-color: white;
+        border-radius: 50px;
+        border: 1px solid purple;
+        color: purple;
+        margin-top: 6.3%;
+        margin-left: 35rem;
+        
+        
+       }
+       #fxnav{
+        position: relative;
+        width: 100rem;
+        padding: 50px;
+        z-index: 5;
+        margin-top: 0rem;
+        
+        
+    }
+    .navbar{
+        text-align: center;
+        padding: 20px;
+        background-color:rgb(245, 239, 239);
+        border-radius: 10px;
+
+        height: 70px;
+        margin: 0px;
+        box-shadow: 3px 3px 3px black;
+    }
+    .call{
+    border:1px solid purple;
+    border-radius: 10px;
+    color:white;
+    background-color: plum;
+    width:15px;
+    height: 15px;
+
+    padding: 10px;
+    margin-left: 70%;
+    margin-top: 0px;
+}
+.f1mage{
+    background-image: url(images/1istbackground.jpg);
+    background-size: 100% 100%;
+
+    padding: 50px;
+    width: 100rem;
+    height: 100rem;
+    text-align: center;
+    
+}
+#curvedimg{
+    border-radius: 50px;
+    margin-top: 30%;
+    width: 50rem;
+    height: 50rem;
+}
+}
+@media screen and (max-width:400px) and (min-width:200px) {
+    body{
+        margin: 2rem;
+    }
+    .contact{
+        padding: 50px;
+        background-color: white;
+        margin: 0%;
+        margin-top: -40px;
+        width: 68rem;
+        height: 400px;
+
+    }
+    
+    .contactform{
+        margin: 0 auto;
+    }
+    .contactme{
+        border-radius: 10px;
+        border: 1px solid purple;
+        margin-top: 10px;
+        height: 70px;
+    }
+    
+    input, textarea,button{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    button{
+        background-color: plum;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    #contactme{
+        font-size: 20px;
+        color: purple;
+    }
+    #mainskills{
+        display: flex;
+        font-size: 70px;
+        margin-bottom: 50px;
+        
+        width: 70rem;
+        padding: 50px;
+       
+    }
+    #html{
+        margin: 20px;
+        margin-left: 100px;
+        color: peachpuff;
+    }
+    #css{
+        color: rgb(141, 141, 240);
+        margin: 20px;
+        margin-left: 0rem;
+    }
+    
+    #Javascript{
+        color: rgb(236, 236, 121);
+        margin: 20px;
+        margin-left: 0rem;
+    }
+    .hvskills{
+        border-radius: 20px;
+        background-color: rgb(251, 252, 253);
+        padding: 40px;
+        box-shadow: 3px 3px 3px black;
+    }
+    .hvskills#html:hover{
+        color: orange;
+        transform: translateY(-8px);
+    }
+    .hvskills#css:hover{
+        color: blue;
+        transform: translateY(-8px);
+    }
+    .hvskills#Javascript:hover{
+        color: yellow;
+        transform: translateY(-8px);
+    }
+    .mskl{
+        font-size: 50px;
+        width: 70rem;
+    }
+    .AM{
+        font-size: 40px;
+        color: purple;
+        width: 70rem;
+
+    }
+    .moreprojectsalign{
+        display: flex;
+        width: 70rem;
+        padding: 30px;
+    }
+    .moreprojects{
+        background-color: rgb(246, 236, 236);
+        color: #fff;
+        font-size: 83px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        position: relative;
+        text-align: center;
+        margin-top: 20%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        padding: 20px;
+        padding-top: 40px;
+        box-shadow: 13px 13px 20px rgb(51, 52, 53);
+        margin-left: 20%;
+    }
+    .aboutme{
+       font-size: 33px;
+    }
+    #About{
+        background-color: rgb(251, 245, 245);
+        width: 70rem;
+        margin: 0rem;      
+        border-radius: 30px ;
+        height: 125rem;
+    }
+    #name{
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        margin-top: 100px;
+        color: purple;
+    }
+    .welcome{
+        width: 30rem;
+        padding: 50px;
+        text-align: center;
+        background-color: white;
+        border-radius: 50px;
+        border: 1px solid purple;
+        color: purple;
+        margin-top: 6.3%;
+        margin-left: 20rem;
+        
+        
+       }
+       #fxnav{
+        position: relative;
+        width: 70rem;
+        padding: 50px;
+        z-index: 5;
+        margin-top: 5rem;
+        
+        
+    }
+    .navbar{
+        text-align: center;
+        padding: 20px;
+        background-color:rgb(245, 239, 239);
+        border-radius: 10px;
+
+        height: 70px;
+        margin: 0px;
+        box-shadow: 3px 3px 3px black;
+    }
+    .call{
+    border:1px solid purple;
+    border-radius: 10px;
+    color:white;
+    background-color: plum;
+    width:15px;
+    height: 15px;
+
+    padding: 10px;
+    margin-left: 70%;
+    margin-top: 0px;
+}
+.f1mage{
+    background-image: url(images/1istbackground.jpg);
+    background-size: cover;
+    padding: 20px;
+    width: 70rem;
+    text-align: center;
+    
+}
+}*/
+@media only screen and  (max-width:1025px) and (min-width:100px) {
+    #fxnav{
+        position: fixed;
+        width: 90%;
+        z-index: 5;
+        height: auto;
+        margin-top: auto;
+    }
+    .navbar{
+        text-align: center;
+        background-color:rgb(245, 239, 239);
+        border-radius: 10px;
+        height: 70px;
+        width: auto;
+        margin: 0;
+        box-shadow: 3px 3px 3px black;
+    }
+       .nav-links a {
+        color: purple;
+        text-decoration: none;
+        margin: 15px;
+        text-decoration: none;
+       }
+       .nav-links a:hover {
+        color: palevioletred;
+       }
+   
+       .welcome{
+        width: 100%;
+
+        text-align: center;
+        background-color: white;
+        border-radius: 50px;
+        border: 1px solid purple;
+        color: purple;   
+       }
+    .dropdown li a{
+        text-decoration: none;
+    }
+    .dropdown-button{ 
+        border: 0px;
+        color: purple;
+        background-color:  plum;
+        border: 1px solid purple;
+        margin-top: 10%;
+    }
+    
+    .number{
+        background-color: plum;
+        border: 2px solid purple;
+        border-radius: 30px;
+        width: 20%;   
+        margin-left: 0px;
+    }
+    .f1mage{
+        background-image: url(images/1istbackground.jpg);
+        background-size: cover;
+        padding: 100px;
+        text-align: center;
+        width: auto;
+        
+    }
+    #curvedimg{
+        width: 100%;
+        border-radius: 50px;
+    }       
+    .call{
+        border:1px solid purple;
+        border-radius: 10px;
+        color:white;
+        background-color: plum;
+        width:15px;
+        height: 15px;
+        margin-left: 150px;
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .callicon{
+        margin-left: 0px;
+    }
+
+    #mainskills{
+        display: block;
+        font-size: 50px;
+        margin-bottom: 50px;
+       
+    }
+    #html{
+        margin: 20px;
+    
+        color: peachpuff;
+    }
+    #css{
+        color: rgb(141, 141, 240);
+        margin: 20px;
+       
+    }
+    
+    #Javascript{
+        color: rgb(236, 236, 121);
+        margin: 20px;
+    }
+ 
+    .aboutme{
+       font-size: 33px;
+    }
+    #About{
+        background-color: rgb(251, 245, 245);
+        width: auto;       
+        border-radius: 30px ;
+        height: auto;
+    }
+    #name{
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        margin-top: 100px;
+        color: purple;
+    }
+    .AM{
+        font-size: 40px;
+        color: purple;
+        width: auto;
+
+    }
+    .moreprojectsalign{
+        display: flex;
+        width: auto;
+        padding: 30px;
+    }
+    .moreprojects{
+        background-color: rgb(246, 236, 236);
+        color: #fff;
+        font-size: 65px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        position: relative;
+        text-align: center;
+        margin-top: 20%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        padding: 20px;
+        padding-top: 40px;
+        box-shadow: 13px 13px 20px rgb(51, 52, 53);
+        margin-left: 10%;
+    }
+ 
+    
+}
+@media only screen and  (max-width:601px) and (min-width:100px) {
+    #fxnav{
+        position: fixed;
+        width: 90%;
+        z-index: 5;
+        height: auto;
+        margin-top: auto;
+    }
+    .navbar{
+        text-align: center;
+        background-color:rgb(245, 239, 239);
+        border-radius: 10px;
+        height: 70px;
+        width: auto;
+        margin: 0;
+        box-shadow: 3px 3px 3px black;
+        margin-left: 10%;
+    }
+       .nav-links a {
+        color: purple;
+        text-decoration: none;
+        margin: 15px;
+        text-decoration: none;
+       }
+       .nav-links a:hover {
+        color: palevioletred;
+       }
+   
+       .welcome{
+        width: 100%;
+
+        text-align: center;
+        background-color: white;
+        border-radius: 50px;
+        border: 1px solid purple;
+        color: purple;  
+        margin-left: 20%; 
+       }
+    .dropdown li a{
+        text-decoration: none;
+    }
+    .dropdown-button{ 
+        border: 0px;
+        color: purple;
+        background-color:  plum;
+        border: 1px solid purple;
+        margin-top: 10%;
+    }
+    
+    .number{
+        background-color: plum;
+        border: 2px solid purple;
+        border-radius: 30px;
+        width: 20%;   
+        margin-left: 0px;
+    }
+    .f1mage{
+        background-image: url(images/1istbackground.jpg);
+        background-size: cover;
+        padding: 100px;
+        text-align: center;
+        width: 100%;
+        
+    }
+    #curvedimg{
+        width: 100%;
+        border-radius: 50px;
+    }       
+    .call{
+        border:1px solid purple;
+        border-radius: 10px;
+        color:white;
+        background-color: plum;
+        width:15px;
+        height: 15px;
+        margin-left: 150px;
+        padding: 10px;
+        margin-top: 0px;
+    }
+    .callicon{
+        margin-left: 0px;
+    }
+    
+    #mainskills{
+        display: block;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    #html{
+        margin: 0px;
+    
+        color: peachpuff;
+    }
+    #css{
+        color: rgb(141, 141, 240);
+        margin: 00px;
+       
+    }
+    
+    #Javascript{
+        color: rgb(236, 236, 121);
+        margin: 0px;
+    }
+    .hvskills{
+        border-radius: 20px;
+        background-color: rgb(251, 252, 253);
+        padding: 40px;
+        width: 120%;
+        
+        box-shadow: 3px 3px 3px black;
+    }
+    .mskl{
+        font-size: 50px;
+        width: 100%;
+        margin-left: 20%;
+    }
+    .aboutme{
+       font-size: 33px;
+    }
+    #About{
+        background-color: rgb(251, 245, 245);
+        width: 120%;       
+        border-radius: 30px ;
+        height: auto;
+        margin-left: 10px;
+    }
+    #name{
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        margin-top: 100px;
+        color: purple;
+    }
+    .AM{
+        font-size: 40px;
+        color: purple;
+        width: auto;
+
+    }
+    .moreprojectsalign{
+        display: block;
+        width: 100%;
+        margin-left: 20%;
+        margin-right: 0;
+        padding: 30px;
+        margin-top: 50%;
+
+    }
+    .moreprojects{
+        background-color: rgb(246, 236, 236);
+        color: #fff;
+        font-size: 65px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        position: relative;
+        text-align: center;
+        margin-top: 20%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 20px;
+        padding-top: 40px;
+        box-shadow: 13px 13px 20px rgb(51, 52, 53);
+        margin-left: 10%;
+    }
+    .login{
+        width: 100%;
+    }
+    .contact{
+        padding: 50px;
+        background-color: white;
+        margin-left:  10%;
+        overflow: auto;
+        
+        width: 100%;
+    }
+    
+    .contactform{
+     
+    }
+    .contactme{
+        border-radius: 10px;
+        border: 1px solid purple;
+        margin-top: 10px;
+    }
+    
+    input, textarea,button{
+        display: block;
+        width: 100%;
+        font-size: 40px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    button{
+        background-color: plum;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    #contactme{
+        font-size: 50px;
+        color: purple;
+    }
+    footer{
+        font-size: 30px;
+        margin: 0;
+    }
+    #alsocontactme2{
+        font-size: 20px;
+        margin: 0;
+    }
+}
